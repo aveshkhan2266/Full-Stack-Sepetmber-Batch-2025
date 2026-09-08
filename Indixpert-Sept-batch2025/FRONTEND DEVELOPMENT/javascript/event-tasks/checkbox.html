@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter first value here..." id="a">
+    <input type="number" placeholder="Enter second value here..." id="b">
+
+    <br><br>
+    <input type="checkbox" id="add">+
+    <br>
+    <input type="checkbox" id="sub">-
+    <br>
+    <input type="checkbox" id="multi">*
+    <br>
+    <input type="checkbox" id="divi">/
+    <br>
+    <br>
+    <button id="btn">Calculate</button>
+
+
+    <script>
+        btn.onclick = () => {
+            // FirstInput=document.getElementById("a");
+            // alert(FirstInput.value);
+
+            // FirstValue=document.getElementById("a").value;
+            // alert(FirstValue);
+
+            FirstValue = parseInt(document.getElementById("a").value);
+            SecondValue = parseInt(document.getElementById("b").value);
+
+            // alert(FirstValue+SecondValue);
+
+
+            if (add.checked) {
+                alert(FirstValue + SecondValue);
+            }
+            else if (sub.checked) {
+                alert(FirstValue - SecondValue);
+            }
+            else if (multi.checked) {
+                alert(FirstValue * SecondValue);
+            }
+            else if (divi.checked) {
+                alert(FirstValue / SecondValue);
+            }
+            else {
+                alert("Check any checkbox");
+            }
+        }
+    </script>
+</body>
+
+</html>

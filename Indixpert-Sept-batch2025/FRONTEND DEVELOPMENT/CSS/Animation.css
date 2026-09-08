@@ -1,0 +1,52 @@
+*{margin: 0;padding: 0;}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    animation-name: tech;
+    animation-duration: 5s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+}
+/* 
+@keyframes tech{
+    from{
+        background-color: red;
+        margin-left: 0;
+    }
+    to{
+        background-color: blue;
+        margin-left: 500px;
+    }
+} */
+
+@keyframes tech{
+    0%{
+        background-color: red;
+        margin-left: 0px;
+        height: 200px;
+        width: 200px;
+    }
+    25%{
+        background-color: brown;
+        margin-left: 500px;
+    }
+    50%{
+        background-color: blue;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        margin-top: 200px;
+    }
+    75%{
+        background-color: green;
+        border-radius: 0px;
+        margin-left: 0;
+        height: 200px;
+        width: 200px;
+    }
+    100%{
+        background-color: orange;
+    }
+}

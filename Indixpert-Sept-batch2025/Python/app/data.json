@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "avesh",
+        "address": "jodhpur",
+        "qualification": [
+            {
+                "qualification_name": "12 pass",
+                "passing_year": "2015"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "avesh",
+        "address": "jodhpur",
+        "qualification": [
+            {
+                "qualification_name": "12 pass",
+                "passing_year": "2015"
+            },
+            {
+                "qualification_name": "1year complete",
+                "passing_year": "2016"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "ovesh",
+        "address": "khan",
+        "qualification": [
+            {
+                "qualification_name": "10 pass",
+                "passing_year": "2014"
+            }
+        ]
+    }
+]

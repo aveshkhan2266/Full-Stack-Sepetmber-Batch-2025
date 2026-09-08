@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Enter Your Value... " id="one">
+
+    <input type="text" placeholder="Enter Your Value... " id="Two">
+
+    <button onclick="add()">Addition</button>
+    <button onclick="subtraction()">Subtraciton</button>
+    <button onclick="multiply()">Mutltiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <p id="res"></p>
+
+    <script>
+
+        function add() {
+            let a = parseInt(one.value);
+            let b = parseInt(Two.value);
+
+            res.innerHTML = "addition =" + (a + b);
+        }
+        function subtraction() {
+            let a = parseInt(one.value);
+            let b = parseInt(Two.value);
+
+            res.innerHTML = "subtraction =" + (a - b);
+        }
+        function multiply() {
+            let a = parseInt(one.value);
+            let b = parseInt(Two.value);
+
+            res.innerHTML = "multiply =" + (a * b);
+        }
+        function divide() {
+            let a = parseInt(one.value);
+            let b = parseInt(Two.value);
+
+            res.innerHTML = "divide =" + (a / b);
+        }
+
+    </script>
+</body>
+
+</html>

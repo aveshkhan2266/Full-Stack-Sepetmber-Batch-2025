@@ -1,0 +1,33 @@
+.box{
+    height: 300px;
+    width: 300px;
+    /* transform: translate(49/0px); */
+    /* transform: translate(300px);
+    transform: translateX(200px); */
+    /* transform: translateY(900px); */
+    /* transform: scaleX(2);
+    transform: scaleY(2); */
+    /* transform: scale(2); */
+    /* transform: rotate(160deg); */
+    /* transform: rotateX(240deg); */
+    /* transform: rotateY(260deg); */
+    /* transform: skew(34deg); */
+    /* transform: skewx(55deg);
+    transform: skewY(78deg); */
+    /* translate: 3s; */
+    margin-left: 30%;
+    /* background-image: url(../images/cherries.jpg); */
+    margin-top: 100px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+
+img:hover{
+    transform: scale(1.2);
+}

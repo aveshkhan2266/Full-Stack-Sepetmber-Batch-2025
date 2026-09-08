@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #000;
+        font-family:
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 14px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        font-family:
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper {
+        width: 240px;
+        height: 320px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        background-size:cover;
+        background-position: center;
+      }
+
+
+
+      .swiper-slide:nth-child(1) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoA95g0-5qwXMc0Lck49v_Qnfm-jlQITPcTCGsdJCM9woVVl1Xe7g6m0c&s=10");
+      }
+
+      .swiper-slide:nth-child(2) {
+        background-image: url("https://images.hdqwalls.com/wallpapers/bthumb/2026-porsche-918-absolute-racing-livery-4k-jd.jpg");
+      }
+
+      .swiper-slide:nth-child(3) {
+        background-image: url("https://live.staticflickr.com/865/26747685067_370dfcdf35_h.jpg");
+      }
+
+      .swiper-slide:nth-child(4) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1WyR0Rf8O60XF72ZdULCZ1oFTiCS2bHEMo2f6YPI6PP8TjdynpU9XAf7&s=10");
+      }
+
+      .swiper-slide:nth-child(5) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPAMRptF9ACttqx_24l_ed8yeCuoI7Lv76iaoje5Re-Y9Il7ZMpvjCRo4&s=10");
+      }
+
+      .swiper-slide:nth-child(6) {
+        background-image: url("https://wallpaperaccess.com/full/800026.jpg");
+      }
+
+      .swiper-slide:nth-child(7) {
+        background-image: url("https://i.pinimg.com/736x/b2/20/1e/b2201e5fea6883247138b5efda6d3a2e.jpg");
+      }
+
+      .swiper-slide:nth-child(8) {
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/9/669/180/cars-high-resolution-desktop-wallpaper-preview.jpg");
+      }
+
+      .swiper-slide:nth-child(9) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPUXIfNBHmPKX4CeDIr3c8fWWewxQk3YWD9DfC8r9zvA4_WyPVziFtvk&s=10");
+      }
+
+      .swiper-slide:nth-child(10) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebJ4yN4UIhSOyyDUa6qTEu0x32WoMemoXrttI2XkRI1n-JTX8nBqhad0&s=10");
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'cards',
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>

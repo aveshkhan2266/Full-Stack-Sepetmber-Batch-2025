@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;}
+
+.box{
+    height: auto;
+    width: 100%;
+    background-color: red;
+}
+@media screen and (max-width:920px){
+    .box{
+        /* height: 400px; */
+    }
+}
+
+@media screen and (max-width:700px){
+    .box{
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:500px){
+    .box{
+        /* height: 550px; */
+        background-color: blue;
+    }
+}

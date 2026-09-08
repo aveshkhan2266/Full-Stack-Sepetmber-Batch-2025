@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;}
+
+.box{
+    height: 50px;
+    width: 300px;
+    background-color: black;
+}
+
+.box2{
+    height: 0px;
+    width: 300px;
+    background-color: lightblue;
+    transition: 2s;
+}
+
+#btn{
+    color: white;
+    font-size: 45px;
+    float: right;
+    cursor: pointer;
+}

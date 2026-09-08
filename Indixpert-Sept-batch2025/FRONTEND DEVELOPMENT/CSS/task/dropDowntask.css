@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+}
+
+.navitem {
+    float: left;
+    padding: 16px;
+    list-style: none;
+}
+
+.navlink {
+    color: white;
+    text-decoration: none;
+}
+
+.Service {
+    margin-top: 15px;
+    background-color: black;
+    display: none;
+}
+
+.Serviceitem {
+    padding: 10px;
+    list-style: none;
+}
+
+.Servicelink {
+    text-decoration: none;
+    color: white;
+}
+
+.navservice:hover .Service {
+    display: block;
+}
+
+.cyberclass {
+    background-color: yellow;
+    position: absolute;
+    left: 367px;
+    top: 130px;
+    display: none;
+}
+
+.cyberitem {
+    list-style: none;
+    padding: 20px;
+}
+
+.cyberlink {
+    text-decoration: none;
+    color: black;
+}
+
+.lilink:hover .cyberclass{
+    display: block;
+}

@@ -1,0 +1,74 @@
+.one{
+    height: 200px;
+    width: 70%;
+    background-color: black;
+    float: left;
+}
+
+.one1{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+.one2{
+    height: 100px;
+    width: 100%;
+    background-color: green;
+}
+
+.two{
+    height: 200px;
+    width: 30%;
+    background-color: brown;
+    float: left;   
+}
+
+.three{
+    height: 200px;
+    width: 30%;
+    background-color: blanchedalmond;
+    float: left;
+}
+
+.four{
+    height: 200px;
+    width: 70%;
+    background-color: blueviolet;
+    float: left;
+}
+
+.four1{
+    height: 100px;
+    width: 100%;
+    background-color: cadetblue;
+    float: left;
+}
+
+.four2{
+    height: 100px;
+    width: 100%;
+    background-color: chocolate;
+    float: left;
+}
+
+.five{
+    height: 200px;
+    width: 30%;
+    background-color: rebeccapurple;
+    float: left;
+}
+
+.six{
+    height: 200px;
+    width: 35%;
+    background-color: cadetblue;
+    float: left;
+}
+
+.seven{
+    height: 200px;
+    width: 35%;
+    background-color: crimson;
+    float: left;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs & Accordion</title>
+    <link rel="stylesheet" href="../bootstrap-via-download/CSS/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- TABS  -->
+    <div class="container mt-4 d-none d-md-block">
+        <nav>
+            <div class="nav nav-tabs" role="tablist">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">Home</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#about">About</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact">Contact</button>
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#service">Service</button>
+            </div>
+        </nav>
+
+        <div class="tab-content p-3 border border-top-0">
+            <div class="tab-pane fade show active" id="home">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Rem, cupiditate modi earum alias reprehenderit id recusandae quis molestiae ipsa dolore minima velit
+                dolorum saepe fuga aliquam laboriosam numquam totam. Beatae voluptas, voluptatum sapiente vitae
+                doloremque eum accusamus dolore consectetur est necessitatibus tenetur unde labore iste ipsum nemo
+                incidunt iure reprehenderit ab magni, dolores nulla perferendis. Nisi possimus iste veniam facere
+                eveniet doloribus rerum vitae, magnam adipisci distinctio, illo earum totam laborum aliquam cumque error
+                aperiam! Molestias, voluptatibus dolorem facilis unde error quam quod cupiditate, corporis deleniti
+                nobis ab quasi veritatis minima recusandae. Tempore ratione fuga molestias, quasi eaque culpa et.</div>
+            <div class="tab-pane fade" id="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, eligendi
+                consequuntur eos laudantium eaque quo, nesciunt culpa reprehenderit deleniti temporibus eius dolorem.
+                Molestias dolor obcaecati nam quae distinctio placeat nihil sit nesciunt, vitae ullam velit quaerat
+                tempore dolores perspiciatis voluptatibus praesentium reprehenderit atque aut in id. Cumque provident
+                expedita ratione fugit quis quo sed facilis cupiditate. Molestiae, tempora debitis non ex eius odit ut
+                corrupti repellat, corporis impedit enim accusantium fuga dicta reprehenderit voluptas velit eum
+                consequuntur hic aut exercitationem deserunt inventore minus? Iure, sed minus sapiente doloribus,
+                dolorem fugit, porro quisquam inventore distinctio possimus dolorum exercitationem totam ullam dolore.
+            </div>
+            <div class="tab-pane fade" id="contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, rem
+                quod, nisi sed natus reiciendis earum vero doloribus asperiores consequuntur nobis? Iste error nostrum
+                sed ipsa. Est quibusdam quae minus numquam velit aperiam. Culpa expedita neque iusto labore omnis
+                blanditiis eum sunt, adipisci non soluta modi fugit unde amet facere sapiente. Similique quo, nisi animi
+                ad omnis, consequuntur asperiores eaque hic impedit nihil tempore sint! Placeat nobis explicabo culpa
+                nesciunt perspiciatis officia accusantium beatae distinctio ullam molestiae, error quidem minus saepe
+                ipsa accusamus quibusdam dolorum sunt magnam similique ad natus sint reiciendis enim. Quam labore sunt
+                aliquid atque! Tenetur, qui!</div>
+            <div class="tab-pane fade" id="service">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+                unde id, similique est minus culpa accusantium, ducimus quis ipsam incidunt esse necessitatibus.
+                Laborum, numquam nihil. Ipsum repudiandae necessitatibus esse incidunt, quaerat excepturi quasi hic,
+                molestiae voluptates inventore deleniti atque ea veritatis accusantium. Obcaecati esse voluptas adipisci
+                quia neque. Sunt quisquam ducimus ratione cumque, voluptas illo iure hic voluptatibus deserunt id
+                aspernatur harum exercitationem esse provident dolore quod rem error minus magni, a facere sed officiis,
+                fugit laborum. Quasi facere asperiores quis iste nemo? Dignissimos doloribus, cum voluptatum, veniam
+                laudantium maiores omnis quaerat ut corporis ea accusamus rerum minus provident nobis!</div>
+        </div>
+    </div>
+
+    <!-- accordian  -->
+    <div class="container mt-4 d-md-none">
+
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accHome">
+                        Home
+                    </button>
+                </h2>
+                <div id="accHome" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem,
+                        cupiditate modi earum alias reprehenderit id recusandae quis molestiae ipsa dolore minima velit
+                        dolorum saepe fuga aliquam laboriosam numquam totam. Beatae voluptas, voluptatum sapiente vitae
+                        doloremque eum accusamus dolore consectetur est necessitatibus tenetur unde labore iste ipsum
+                        nemo incidunt iure reprehenderit ab magni, dolores nulla perferendis. Nisi possimus iste veniam
+                        facere eveniet doloribus rerum vitae, magnam adipisci distinctio, illo earum totam laborum
+                        aliquam cumque error aperiam! Molestias, voluptatibus dolorem facilis unde error quam quod
+                        cupiditate, corporis deleniti nobis ab quasi veritatis minima recusandae. Tempore ratione fuga
+                        molestias, quasi eaque culpa et.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accAbout">
+                        About
+                    </button>
+                </h2>
+                <div id="accAbout" class="accordion-collapse collapse">
+                    <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, eligendi
+                        consequuntur eos laudantium eaque quo, nesciunt culpa reprehenderit deleniti temporibus eius
+                        dolorem. Molestias dolor obcaecati nam quae distinctio placeat nihil sit nesciunt, vitae ullam
+                        velit quaerat tempore dolores perspiciatis voluptatibus praesentium reprehenderit atque aut in
+                        id. Cumque provident expedita ratione fugit quis quo sed facilis cupiditate. Molestiae, tempora
+                        debitis non ex eius odit ut corrupti repellat, corporis impedit enim accusantium fuga dicta
+                        reprehenderit voluptas velit eum consequuntur hic aut exercitationem deserunt inventore minus?
+                        Iure, sed minus sapiente doloribus, dolorem fugit, porro quisquam inventore distinctio possimus
+                        dolorum exercitationem totam ullam dolore.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accContact">
+                        Contact
+                    </button>
+                </h2>
+                <div id="accContact" class="accordion-collapse collapse">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, rem
+                        quod, nisi sed natus reiciendis earum vero doloribus asperiores consequuntur nobis? Iste error
+                        nostrum sed ipsa. Est quibusdam quae minus numquam velit aperiam. Culpa expedita neque iusto
+                        labore omnis blanditiis eum sunt, adipisci non soluta modi fugit unde amet facere sapiente.
+                        Similique quo, nisi animi ad omnis, consequuntur asperiores eaque hic impedit nihil tempore
+                        sint! Placeat nobis explicabo culpa nesciunt perspiciatis officia accusantium beatae distinctio
+                        ullam molestiae, error quidem minus saepe ipsa accusamus quibusdam dolorum sunt magnam similique
+                        ad natus sint reiciendis enim. Quam labore sunt aliquid atque! Tenetur, qui!</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accService">
+                        Service
+                    </button>
+                </h2>
+                <div id="accService" class="accordion-collapse collapse">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, unde
+                        id, similique est minus culpa accusantium, ducimus quis ipsam incidunt esse necessitatibus.
+                        Laborum, numquam nihil. Ipsum repudiandae necessitatibus esse incidunt, quaerat excepturi quasi
+                        hic, molestiae voluptates inventore deleniti atque ea veritatis accusantium. Obcaecati esse
+                        voluptas adipisci quia neque. Sunt quisquam ducimus ratione cumque, voluptas illo iure hic
+                        voluptatibus deserunt id aspernatur harum exercitationem esse provident dolore quod rem error
+                        minus magni, a facere sed officiis, fugit laborum. Quasi facere asperiores quis iste nemo?
+                        Dignissimos doloribus, cum voluptatum, veniam laudantium maiores omnis quaerat ut corporis ea
+                        accusamus rerum minus provident nobis!</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../bootstrap-via-download/JS/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

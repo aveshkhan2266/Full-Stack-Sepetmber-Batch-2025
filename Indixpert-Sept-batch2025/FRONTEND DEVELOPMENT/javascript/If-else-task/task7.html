@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const cp = parseInt(prompt("Enter Cost Price ="));
+        const sp = parseInt(prompt("Enter Selling Price ="));
+
+        if (sp > cp)
+        {
+            profit = sp - cp
+            document.write("Profit"+profit);
+        }
+        else if (cp > sp)
+        {
+            loss = cp - sp
+            document.write("Loss"+Loss);
+        }
+        else
+        {
+            document.write("No Profit No Loss");
+        }
+    </script>
+</body>
+
+</html>

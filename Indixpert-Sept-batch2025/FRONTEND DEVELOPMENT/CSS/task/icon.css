@@ -1,0 +1,81 @@
+*{margin: 0;padding: 0;}
+
+.nav{
+    height: 70px;
+    width: 100%;
+}
+
+.icon{
+    height: 70px;
+    width: 20%;
+    float: left;
+}
+
+.name{
+    height: 70px;
+    width: 60%;
+    float: left;
+}
+
+.name1{
+    height: 70px;
+    width: 20%;
+    float: left;
+}
+
+.icon1{
+    font-size: 35px;
+    margin-left: 20%;
+    margin-top: 6%;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 3;
+}
+
+.imgbox{
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.box1{
+    height: 400px;
+    width: 21%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+}
+
+.prabox{
+    height: 180px;
+    width: 100%;
+    float: left;
+    margin: auto;
+    padding: auto;
+}
+
+.midprabox{
+    height: 150px;
+    width: 21%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    font-size: 27px;
+    text-align: center;
+}
+
+h5{
+    font-weight: lighter;
+}
+
+p{
+    font-size: 15px;
+    margin-top: 8%;
+    font-weight: 200;
+}

@@ -1,0 +1,17 @@
+*{margin: 0;padding: 0;}
+ul{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+li{
+    float: left;
+    /* background-color: yellow; */
+    padding: 16px;
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

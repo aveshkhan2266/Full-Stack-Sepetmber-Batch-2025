@@ -1,0 +1,31 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.top{
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+.box{
+    height: 100%;
+    width: 25%;
+    background-color: black; 
+    color: white;
+    text-align: center;
+}
+
+.dropdown{
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+
+.drop:hover .dropdown{
+    display: block;
+}

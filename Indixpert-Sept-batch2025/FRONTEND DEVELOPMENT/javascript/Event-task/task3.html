@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter a value... " id="one" autofocus>
+
+    <input type="number" placeholder="Enter a value... " id="second" autofocus>
+
+    <button onclick="show()">Click Me</button>
+
+    <p id="res"></p>
+    <p id="res1"></p>
+    <p id="res2"></p>
+    <p id="res3"></p>
+
+
+
+    <script>
+        function show() {
+            let a = parseInt(one.value);
+            let b = parseInt(second.value);
+
+            res.innerHTML = "Addition = " + (a + b);
+            res1.innerHTML = "Substraction = " + (a - b);
+            res2.innerHTML = "Multiply = " + (a * b);
+            res3.innerHTML = "Divide = " + (a / b);
+
+        }
+    </script>
+</body>  
+
+</html>

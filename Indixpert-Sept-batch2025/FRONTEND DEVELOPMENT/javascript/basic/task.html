@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Search Names</h2>
+    <input type="text" id="searchInput" placeholder="Search Name">
+    <ul id="nameList"></ul>
+
+    <script>
+
+    
+        const names = [
+            "Ovesh",
+            "Ziya",
+            "Pankaj",
+            "Karan",
+            "Kartik",
+            "Avesh",
+            "Raess"
+        ];
+
+        const searchInput = document.getElementById("searchInput");
+        const nameList = document.getElementById("nameList");
+
+        // Show Names Function
+        function showNames(data) {
+            nameList.innerHTML = "";
+            data.forEach(function(name) {
+                const li = document.createElement("li");
+                li.innerText = name;
+                nameList.appendChild(li);
+            });
+        }
+        
+        showNames(names);
+
+        
+        function debounce(callback, delay) {
+
+            let timer;
+
+            return function() {
+                clearTimeout(timer);
+                timer = setTimeout(function() {
+                    callback();
+                }, delay);
+            };
+        }
+
+
+        function searchNames() {
+
+            const searchValue = searchInput.value.toLowerCase();
+            const filteredNames = names.filter(function(name) {
+                return name.toLowerCase().includes(searchValue);
+            });
+
+            showNames(filteredNames);
+        }
+
+        const debouncedSearch = debounce(searchNames, 10);
+        searchInput.addEventListener("input", debouncedSearch);
+
+    </script>
+
+</body> 
+</html>

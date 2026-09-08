@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    
+
+    <script>
+        button=document.createElement("button");
+        button.innerHTML="Click me";
+        button.setAttribute("id","btn");
+        body.appendChild(button);
+
+
+        btn.onclick=()=>{
+                box=document.createElement("div");
+                box.style.height="200px";
+                box.style.width="200px";
+                box.style.backgroundColor="red";
+                box.style.margin="5px";
+                box.style.float="left";
+                body.appendChild(box);
+        }
+    </script>
+</body>
+</html>

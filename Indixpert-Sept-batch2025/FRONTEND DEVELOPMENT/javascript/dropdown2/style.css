@@ -1,0 +1,51 @@
+*{margin: 0%; padding: 0%;}
+
+.main{
+    /* background-color: palegreen; */
+    background-image: url("../Array/assets/nature.jpg");
+    height: 580px;
+    width: 100%;
+    float: left;
+    background-size: cover;
+}
+
+.fullbox{
+    /* background-color: red; */
+    height: 500px;
+    width: 29%;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+}
+
+.box{
+    background-color: rebeccapurple;
+    height: 20%;
+    width: 100%;
+}
+
+.box1{
+    background-color: blanchedalmond;
+    height: 0px;
+    width: 100%;
+    transition: 2s;
+}
+
+#btn{
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+#btn1{
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+#btn2{
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}

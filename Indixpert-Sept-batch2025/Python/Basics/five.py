@@ -1,0 +1,15 @@
+Number1=int(input("Enter Number: "))
+Number2=int(input("Enter Number: "))
+Number3=int(input("Enter Number: "))
+Number4=int(input("Enter Number: "))
+Number5=int(input("Enter Number: "))
+Number6=int(input("Enter Number: "))
+Number7=int(input("Enter Number: "))
+Number8=int(input("Enter Number: "))
+Number9=int(input("Enter Number: "))
+Number10=int(input("Enter Number: "))
+listdata=[Number1,Number2,Number3,Number4,Number5,Number6,Number7,Number8,Number9,Number10]
+listdata.sort()
+
+print("min=",listdata[0])
+print("max=",listdata[9])

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter value here..." id="inp" autofocus>
+    <input type="text" placeholder="Enter value here..." id="inp2">
+    <br><br>
+    <input type="radio" id="add" name="x"> +
+    <br><br>
+    <input type="radio" id="sub" name="x"> -
+    <br><br>
+    <input type="radio" id="multi" name="x"> *
+    <br><br>
+    <input type="radio" id="divi" name="x"> /
+    <br><br>
+    <button onclick="calculation()">Calculate</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function calculation() {
+            // console.log(inp.value);
+            // console.log(inp2.value);
+
+            a = parseInt(inp.value);
+            b = parseInt(inp2.value);
+
+            if (add.checked) {
+                result.innerHTML = "Addition of " + a + " + " + b + " = " + (a + b);
+                add.checked=false;
+            }
+            else if(sub.checked){
+                result.innerHTML = "Substraction of " + a + " - " + b + " = " + (a - b);
+                sub.checked=false;
+            }
+            else if(multi.checked){
+                result.innerHTML = "Multiplication of " + a + " * " + b + " = " + (a * b);
+                muti.checked=false
+            }
+            else if(divi.checked){
+                result.innerHTML = "Division of " + a + " / " + b + " = " + (a / b);
+                divi.checked=false
+            }
+            else{
+                alert("Select given options to perform calculation");
+            }
+
+            // alert(inp.value);
+            inp.value="";
+            inp.focus();
+            inp2.value="";
+        
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+*{margin: 0;padding: 0;}
+
+.main
+{
+    height: 580px;
+    width: 100%;
+    background-color: black;
+}
+
+.top{
+    height: 33.3%;
+    width: 100%;
+    background-color: red;
+}
+.mid{
+    height: 33.3%;
+    width: 100%;
+    background-color: blue;
+}
+.bottom{
+    height: 33.3%;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+.top1{
+    height: 100%;
+    width: 33.3%;
+    background-color: brown;
+}
+.top2{
+    height: 100%;
+    width: 33.3%;
+    background-color: brown;
+}
+.top3{
+    height: 100%;
+    width: 33.3%;
+    background-color: brown;
+}

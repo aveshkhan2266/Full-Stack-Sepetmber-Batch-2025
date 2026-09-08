@@ -1,0 +1,17 @@
+*{margin: 0;padding: 0;}
+
+.box{
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+.box1{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
+.box2{
+    height: 200px;
+    width: 100%;
+    background-color: orange;
+}

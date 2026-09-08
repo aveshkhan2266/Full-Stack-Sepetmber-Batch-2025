@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date&Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="clock" id="clock">
+        <h1 id="h"></h1>:
+        <h1 id="min"></h1>:
+        <h1 id="s"></h1>
+        <h3 id="today"></h3>
+        <h3 id="month"></h3>
+        <h3 id="year"></h3>
+
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        setInterval(() => {
+            var mydate = new Date();
+
+            h.innerHTML = mydate.getHours() - 12;
+            min.innerHTML = mydate.getMinutes();
+            s.innerHTML = mydate.getSeconds();
+
+            today.innerHTML = mydate.getDate();
+            month.innerHTML = mydate.getMonth() + 1;
+            year.innerHTML = mydate.getFullYear();
+        })
+    </script>
+</body>
+</html>

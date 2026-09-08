@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0;}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+.nav-item{
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.Services{
+    margin-top: 15px;
+    background-color: black;
+    display: none;
+}
+
+.ServicesItem{
+    padding: 10px;
+    list-style: none;
+}
+
+.ServicesLink{
+    text-decoration: none;
+    color: white;
+}
+
+.MyServices:hover .Services{
+    display: block;
+}
+
+/* 
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+.nav-item{
+    height: 70%;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+} */

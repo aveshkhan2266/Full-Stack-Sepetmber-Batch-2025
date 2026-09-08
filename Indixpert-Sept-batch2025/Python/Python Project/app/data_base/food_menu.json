@@ -1,0 +1,330 @@
+{
+    "Breakfast": {
+        "Veg": [
+            {
+                "name": "Paneer Paratha",
+                "full": 80,
+                "half": 40
+            },
+            {
+                "name": "Aloo Paratha",
+                "full": 60,
+                "half": 30
+            },
+            {
+                "name": "Vegetable Sandwich",
+                "full": 50,
+                "half": 25
+            },
+            {
+                "name": "Idli Sambhar",
+                "full": 70,
+                "half": 35
+            },
+            {
+                "name": "Dhokla",
+                "full": 50,
+                "half": 25
+            },
+            {
+                "name": "Poha",
+                "full": 40,
+                "half": 20
+            },
+            {
+                "name": "Upma",
+                "full": 45,
+                "half": 23
+            },
+            {
+                "name": "Masala Omelette (Veg)",
+                "full": 55,
+                "half": 28
+            },
+            {
+                "name": "Veg Burger",
+                "full": 60,
+                "half": 30
+            },
+            {
+                "name": "Cornflakes with Milk",
+                "full": 40,
+                "half": 20
+            },
+            {
+                "name": "masala dosa",
+                "full": 100,
+                "half": 50
+            },
+            {
+                "name": "dhokla",
+                "full": 100,
+                "half": 50
+            }
+        ],
+        "Non-Veg": [
+            {
+                "name": "Egg Omelette",
+                "full": 60,
+                "half": 30
+            },
+            {
+                "name": "Egg Bhurji",
+                "full": 55,
+                "half": 28
+            },
+            {
+                "name": "Chicken Sandwich",
+                "full": 80,
+                "half": 40
+            },
+            {
+                "name": "Chicken Roll",
+                "full": 90,
+                "half": 45
+            },
+            {
+                "name": "Mutton Keema Paratha",
+                "full": 100,
+                "half": 50
+            },
+            {
+                "name": "Egg Sandwich",
+                "full": 50,
+                "half": 25
+            },
+            {
+                "name": "Chicken Toast",
+                "full": 85,
+                "half": 42
+            },
+            {
+                "name": "Egg Burger",
+                "full": 65,
+                "half": 33
+            },
+            {
+                "name": "Chicken Poha",
+                "full": 75,
+                "half": 37
+            },
+            {
+                "name": "Chicken Upma",
+                "full": 80,
+                "half": 40
+            }
+        ]
+    },
+    "Lunch": {
+        "Veg": [
+            {
+                "name": "Paneer Butter Masala",
+                "full": 120,
+                "half": 60
+            },
+            {
+                "name": "Dal Makhani",
+                "full": 100,
+                "half": 50
+            },
+            {
+                "name": "Mix Veg Curry",
+                "full": 90,
+                "half": 45
+            },
+            {
+                "name": "Palak Paneer",
+                "full": 110,
+                "half": 55
+            },
+            {
+                "name": "Chole",
+                "full": 80,
+                "half": 40
+            },
+            {
+                "name": "Rajma",
+                "full": 80,
+                "half": 40
+            },
+            {
+                "name": "Vegetable Biryani",
+                "full": 120,
+                "half": 60
+            },
+            {
+                "name": "Aloo Gobi",
+                "full": 85,
+                "half": 42
+            },
+            {
+                "name": "Bhindi Masala",
+                "full": 90,
+                "half": 45
+            },
+            {
+                "name": "Veg Fried Rice",
+                "full": 100,
+                "half": 50
+            }
+        ],
+        "Non-Veg": [
+            {
+                "name": "Butter Chicken",
+                "full": 150,
+                "half": 75
+            },
+            {
+                "name": "Chicken Curry",
+                "full": 130,
+                "half": 65
+            },
+            {
+                "name": "Mutton Curry",
+                "full": 180,
+                "half": 90
+            },
+            {
+                "name": "Fish Curry",
+                "full": 160,
+                "half": 80
+            },
+            {
+                "name": "Egg Curry",
+                "full": 100,
+                "half": 50
+            },
+            {
+                "name": "Chicken Biryani",
+                "full": 150,
+                "half": 75
+            },
+            {
+                "name": "Mutton Biryani",
+                "full": 180,
+                "half": 90
+            },
+            {
+                "name": "Prawn Curry",
+                "full": 200,
+                "half": 100
+            },
+            {
+                "name": "chiken spicy",
+                "full": 500,
+                "half": 250
+            },
+            {
+                "name": "Egg Fried Rice",
+                "full": 120,
+                "half": 60
+            }
+        ]
+    },
+    "Dinner": {
+        "Veg": [
+            {
+                "name": "Paneer Tikka Masala",
+                "full": 130,
+                "half": 65
+            },
+            {
+                "name": "Dal Tadka",
+                "full": 100,
+                "half": 50
+            },
+            {
+                "name": "Mix Veg Curry",
+                "full": 90,
+                "half": 45
+            },
+            {
+                "name": "Palak Paneer",
+                "full": 110,
+                "half": 55
+            },
+            {
+                "name": "Chole",
+                "full": 80,
+                "half": 40
+            },
+            {
+                "name": "Rajma",
+                "full": 80,
+                "half": 40
+            },
+            {
+                "name": "Vegetable Biryani",
+                "full": 120,
+                "half": 60
+            },
+            {
+                "name": "Aloo Gobi",
+                "full": 85,
+                "half": 42
+            },
+            {
+                "name": "Bhindi Masala",
+                "full": 90,
+                "half": 45
+            },
+            {
+                "name": "Veg Fried Rice",
+                "full": 100,
+                "half": 50
+            }
+        ],
+        "Non-Veg": [
+            {
+                "name": "Butter Chicken",
+                "full": 150,
+                "half": 75
+            },
+            {
+                "name": "Chicken Curry",
+                "full": 130,
+                "half": 65
+            },
+            {
+                "name": "Mutton Curry",
+                "full": 180,
+                "half": 90
+            },
+            {
+                "name": "Fish Curry",
+                "full": 160,
+                "half": 80
+            },
+            {
+                "name": "Egg Curry",
+                "full": 100,
+                "half": 50
+            },
+            {
+                "name": "Chicken Biryani",
+                "full": 150,
+                "half": 75
+            },
+            {
+                "name": "Mutton Biryani",
+                "full": 180,
+                "half": 90
+            },
+            {
+                "name": "Prawn Curry",
+                "full": 200,
+                "half": 100
+            },
+            {
+                "name": "Chicken Korma",
+                "full": 160,
+                "half": 80
+            },
+            {
+                "name": "Egg Fried Rice",
+                "full": 120,
+                "half": 60
+            }
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+.main{
+    height: 250px;
+    width: 500px;
+    background-color: blue;
+}
+
+.circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: auto;
+    background: conic-gradient(red 0deg 90deg, white 90deg 360deg);
+}

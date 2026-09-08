@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <i class="fa-solid fa-angle-left" id="left"></i>
+        </div>
+        <div class="box2">
+            <img src="" alt="" id="image">
+        </div>
+        <div class="box3">
+            <i class="fa-solid fa-angle-right" id="right"></i>
+        </div>
+    </div>
+
+    <script>
+        myImages = ["back1.jpg", "back2.jpg", "backgroung.jpg", "switzerland.jpg"];
+        window.onload=()=>{
+            slider();
+        }
+        x = 0;
+        function slider() {
+            image.src = "./assets/" + myImages[x];
+        }
+        right.onclick = () => {
+            if (x < myImages.length-1) {
+                x++;
+            }
+            else {
+                x = 0;
+            }
+            slider();
+        }
+        left.onclick=()=>{
+            if(x>0){
+                x--;
+            }
+            else{
+                x=myImages.length-1;
+            }
+            slider();
+        }
+    </script>
+</body>
+
+</html>

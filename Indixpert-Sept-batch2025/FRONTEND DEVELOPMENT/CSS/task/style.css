@@ -1,0 +1,48 @@
+.a{
+    background: yellow;
+    height: 150px;
+    width: 40%;
+    float: left;
+}
+
+.b{
+    background: pink;
+    height: 150px;
+    width: 60%;
+    float: left;
+}
+
+.c{
+    background: black;
+    height: 150px;
+    width: 60%;
+    float: left;
+}
+
+.d{
+    background: red;
+    height: 150px;
+    width: 40%;
+    float: left;
+}
+
+.e{
+    background: purple;
+    height: 150px;
+    width: 50%;
+    float: left;
+}
+
+.f{
+    background: green;
+    height: 150px;
+    width: 50%;
+    float: left;
+}
+
+.g{
+    background: brown;
+    height: 150px;
+    width: 100%;
+    float: left;
+}

@@ -1,0 +1,30 @@
+.main{
+    background-color: black;
+    height: 550px;
+    width: 100%;
+}
+
+.column{
+    background-color: blue;
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.top{
+    background-color: aquamarine;
+    height: 70%;
+    width: 100%;
+}
+
+.bottom{
+    background-color: red;
+    height: 15%;
+    width: 100%;
+}
+
+.mid{
+    background-color: blueviolet;
+    height: 15%;
+    width: 100%;
+}
