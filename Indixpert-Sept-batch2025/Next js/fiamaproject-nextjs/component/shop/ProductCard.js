@@ -1,29 +1,41 @@
+"use client";
 import React, { useState } from 'react';
 import { Card, Badge } from 'react-bootstrap';
 import { Eye } from 'react-bootstrap-icons';
-import AddToWishlistRedux from './Wishlist/AddToWishlistRedux';
-import AddToCartRedux from './cart/AddTocartRedux';
-import QuickViewModal from './QuickViewModal';
-import { useNavigate } from 'react-router-dom';
+import Link from 'next/link';
+import AddToWishlistRedux from '../Wishlist/AddToWishlistRedux';
+import AddToCartRedux from '../cart/AddTocartRedux';
+import QuickViewModal from '../productdetail/QuickViewModal';
+import productImage1 from '../../assets/image/1.webp';
+import productImage2 from '../../assets/image/2.webp';
+import productImage3 from '../../assets/image/3.webp';
+import productImage4 from '../../assets/image/4.webp';
+import productImage5 from '../../assets/image/5.webp';
+import productImage6 from '../../assets/image/6.webp';
+import productImage7 from '../../assets/image/7.webp';
+import productImage8 from '../../assets/image/8.webp';
+
+
+const fallbackImages = [
+    productImage1,
+    productImage2,
+    productImage3,
+    productImage4,
+    productImage5,
+    productImage6,
+    productImage7,
+    productImage8,
+];
 
 const ProductCard = ({ product }) => {
     const [showQuickView, setShowQuickView] = useState(false);
+    const [imageSource, setImageSource] = useState(
+        product.images?.[0] || product.thumbnail || fallbackImages[0]
+    );
 
-    const navigate = useNavigate();
-
-    const handleQuickView = () => {
+    const handleQuickView = (event) => {
+        event.stopPropagation();
         setShowQuickView(true);
-    };
-
-    const handleProductClick = () => {
-        navigate(
-            `/${product.category}/${product.title.replace(/\s+/g, '-')}`,
-            {
-                state: {
-                    productId: product.id
-                }
-            }
-        );
     };
 
     return (
@@ -36,26 +48,20 @@ const ProductCard = ({ product }) => {
                     </Badge>
                 )}
 
-                <div
-                    onClick={handleProductClick}
-                    style={{ cursor: 'pointer' }}
-                >
+                <Link href={`/product/${product.id}`} className="d-block">
                     <Card.Img
                         variant="top"
-                        src={product.thumbnail}
+                        src={imageSource}
                         alt={product.title}
                         className="flower-card-img rounded-0"
-                        onError={(event) => {
-                            const fallbackImage = product.images?.[0];
-
-                            if (fallbackImage && event.currentTarget.src !== fallbackImage) {
-                                event.currentTarget.src = fallbackImage;
-                            } else {
-                                event.currentTarget.style.visibility = 'hidden';
+                        onError={() => {
+                            const fallbackImage = fallbackImages[(product.id - 1) % fallbackImages.length];
+                            if (imageSource !== fallbackImage) {
+                                setImageSource(fallbackImage);
                             }
                         }}
                     />
-                </div>
+                </Link>
 
                 <div className="hover-cart d-flex align-items-center p-0">
 
@@ -78,9 +84,14 @@ const ProductCard = ({ product }) => {
 
             <div className="text-center mt-3">
 
-                <h6 className="mb-1 text-uppercase text-secondary fw-normal">
-                    {product.title}
-                </h6>
+                <Link
+                    href={`/product/${product.id}`}
+                    className="text-decoration-none"
+                >
+                    <h6 className="mb-1 text-uppercase text-secondary fw-normal">
+                        {product.title}
+                    </h6>
+                </Link>
 
                 <p className="fw-semibold text-color mb-0">
                     {product.price}{' '}

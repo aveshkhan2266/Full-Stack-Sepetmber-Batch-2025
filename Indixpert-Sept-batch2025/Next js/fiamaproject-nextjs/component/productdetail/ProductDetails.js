@@ -1,20 +1,26 @@
+"use client";
+
 import React, { Fragment, useEffect, useState } from "react";
-import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
-import { Heart } from "react-bootstrap-icons";
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
+import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useSelector } from "react-redux";
+
 import { getProducts } from "../../api/Services";
 import { ConvertToCurrency } from "../../utils/utils";
 import AddToCartRedux from "../cart/AddTocartRedux";
 import AddToWishlistRedux from "../Wishlist/AddToWishlistRedux";
 
 const ProductDetails = () => {
-    const location = useLocation();
-    const { slug } = useParams();
 
-    const productId = location.state?.productId;
+    const params = useParams();
+    const productId = params?.id || params?.slug;
+
+    const wishlistItems = useSelector(
+        (state) => state.wishlist?.wishlistItems || []
+    );
 
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -35,13 +41,16 @@ const ProductDetails = () => {
         fetchProducts();
     }, []);
 
-    const activeProduct = products.find((product) => {
-        const productSlug = product.title.replace(/\s+/g, "-");
-        return productId
-            ? String(product.id) === String(productId)
-            : productSlug.toLowerCase() === slug?.toLowerCase();
-    });
+    const wishlistProduct = wishlistItems.find(
+        (product) => String(product.id) === String(productId)
+    );
 
+    const activeProduct =
+        wishlistProduct ||
+        products.find(
+            (product) => String(product.id) === String(productId)
+        ) ||
+        (!productId ? products[0] : undefined);
 
     const selectedImage =
         activeProduct?.images?.[selectedImageIndex] ||
@@ -64,12 +73,12 @@ const ProductDetails = () => {
                 <Container className="py-5 mt-5 text-center">
                     <h3>Product not found</h3>
 
-                    <NavLink
-                        to="/shop"
+                    <Link
+                        href="/product"
                         className="btn btn-primary mt-3"
                     >
                         Back to Products
-                    </NavLink>
+                    </Link>
                 </Container>
             ) : (
                 <Container className="py-4 product-details-container py-5 mt-5">

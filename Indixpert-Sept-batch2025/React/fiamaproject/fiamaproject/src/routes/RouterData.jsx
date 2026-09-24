@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         element: <RootLayout />,
         children: [
             { path: "/", element: <Home /> },
-            { path: "/product", element: <Products /> },
+            { path: "/product", element: <Shop /> },
             { path: "/:category/:slug", element: <Products /> },
             { path: "/shop", element: <Shop /> },
             { path: "/shop/:slug", element: <Shop /> },
